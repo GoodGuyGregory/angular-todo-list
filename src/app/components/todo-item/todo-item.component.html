@@ -1,0 +1,10 @@
+<!-- All components must have contents wrapped in a single div tag -->
+<!--  [ngClass] allows for dynamic class renaming -->
+<div [ngClass]="setClasses()">
+    <p>
+        <!--  adds an event to the input -->
+        <input (change)="onToggle(todo)" type="checkbox" />
+        {{todo.title}}
+        <button (click)="onDelete(todo)" class="del">x</button>
+    </p>
+</div>
